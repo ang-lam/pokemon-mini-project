@@ -11,4 +11,8 @@ class Pokemon < ApplicationRecord
             self.create(name: pokemon["name"])
         end
     end
+
+    def capitalize_name
+        self.name.capitalize
+    end
 end
