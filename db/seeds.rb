@@ -1,3 +1,4 @@
+require 'faker'
 #response will be a string
 # response = RestClient.get("https://pokeapi.co/api/v2/pokemon?limit=151")
 # #we parse it into a hash
@@ -11,4 +12,17 @@
 
 #best practice is to call API through the models (logic)
 
-Pokemon.get_data
+#----------------------------Seeded Data--------------------------------
+# Pokemon.get_data
+
+# num_trainer = 10
+# num_trainer.times do
+#     params = {
+#         name: Faker::Name.name
+#     }
+#     Trainer.create(params)
+# end
+
+
+#-----------------------------------------------------------------------
+
