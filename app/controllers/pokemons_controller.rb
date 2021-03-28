@@ -6,5 +6,6 @@ class PokemonsController < ApplicationController
 
     def show
         #show page for individual pokemon
+        @pokemon = Pokemon.find_by(id: params[:id])
     end
 end

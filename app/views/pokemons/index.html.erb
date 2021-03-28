@@ -1,5 +1,5 @@
 <h1> All Pokemon in Kanto Region </h1>
 
 <% @pokemons.each do |pokemon| %>
-    <%= link_to pokemon.name.capitalize, pokemon_path(pokemon) %>
+    <p><%= link_to pokemon.name.capitalize, pokemon_path(pokemon) %></p><br>
 <% end %>
