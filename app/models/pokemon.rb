@@ -1,5 +1,6 @@
 class Pokemon < ApplicationRecord
-    has_many :trainers
+    has_many :trainer_pokemons
+    has_many :trainers, through: :trainer_pokemons
 
     #this should be class method because we are not calling it on a particular instance
     def self.get_data #scope of this method is the class

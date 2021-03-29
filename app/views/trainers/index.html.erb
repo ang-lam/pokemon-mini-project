@@ -1,0 +1,3 @@
+<% @trainers.all.each do |trainer| %>
+    <%= link_to trainer.cap_name, trainer_path(trainer) %><br>
+<% end %>
