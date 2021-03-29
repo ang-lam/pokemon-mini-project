@@ -1,5 +1,7 @@
 <h1> New Team Form </h1>
 <%= form_for(@team) do |f| %>
+    <%= f.label :trainer_id %>
+    <%= f.select :trainer_id, Team::TRAINERS %><br>
     <%= f.label :name %>
     <%= f.text_field :name %><br>
     <%= f.label :pokemon_1 %>
