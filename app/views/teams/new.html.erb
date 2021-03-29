@@ -1,7 +1,20 @@
+<h1> New Team Form </h1>
 <%= form_for(@team) do |f| %>
     <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.select :pokemon_1, Team::POKEMONS %>
+    <%= f.text_field :name %><br>
+    <%= f.label :pokemon_1 %>
+    <%= f.select :pokemon_1, Team::POKEMONS %><br>
+    <%= f.label :pokemon_2 %>
+    <%= f.select :pokemon_2, Team::POKEMONS %><br>
+    <%= f.label :pokemon_3 %>
+    <%= f.select :pokemon_3, Team::POKEMONS %><br>
+    <%= f.label :pokemon_4 %>
+    <%= f.select :pokemon_4, Team::POKEMONS %><br>
+    <%= f.label :pokemon_5 %>
+    <%= f.select :pokemon_5, Team::POKEMONS %><br>
+    <%= f.label :pokemon_6 %>
+    <%= f.select :pokemon_6, Team::POKEMONS %><br>
+
 
     <%= f.submit %>
 <% end %>
