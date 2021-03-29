@@ -1,0 +1,7 @@
+<%= form_for(@team) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.select :pokemon_1, Team::POKEMONS %>
+
+    <%= f.submit %>
+<% end %>
